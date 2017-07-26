@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test simple.js 1`] = `
+"\`Xin chào \${world} 👻\`;
+
+\`Đặt hàng\`;
+
+\`This text doesn't have any translation\`;
+
+\`Tìm thấy \${itemFound} sản phẩm!\`;
+
+\`Vui lòng chuyển khoản \${grandTotal} đến tài khoản này trong vòng \${time} ngày để hoàn tất đơn hàng\`;"
+`;

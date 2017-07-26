@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test react.js 1`] = `
+"\\"use strict\\";
+
+var Component = function Component(_ref) {
+  var sizeFound = _ref.sizeFound;
+  return React.createElement(
+    \\"div\\",
+    null,
+    \\"Hien co \\" + sizeFound + \\" kich co. Sap het hang\\"
+  );
+};"
+`;
