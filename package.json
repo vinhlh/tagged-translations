@@ -1,5 +1,5 @@
 {
-  "name": "tagged-translations",
+  "name": "babel-plugin-tagged-translations",
   "version": "1.0.0",
   "description": "A dead simple babel-plugin for translating texts in React applications",
   "author": "Vinh Le <hung.vjnh@gmail.com>",
