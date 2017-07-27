@@ -9,7 +9,7 @@ const runTests = (dir, presets = ['react', 'es2015'], plugins) => {
       [
         require('../src'),
         {
-          translation: './tests/translation.json',
+          translation: './translations/default.json',
           tagName: 't'
         }
       ]
