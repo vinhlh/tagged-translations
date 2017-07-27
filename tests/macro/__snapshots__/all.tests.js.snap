@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test macro.js 1`] = `
+"
+
+const name = 'Vinh Le';
+
+\`Xin chào \${name} 👻\`;
+
+\`Đặt hàng\`;
+
+\`This text doesn't have any translation\`;
+
+\`Tìm thấy \${itemFound} sản phẩm!\`;
+
+\`Vui lòng chuyển khoản \${grandTotal} đến tài khoản này trong vòng \${time} ngày để hoàn tất đơn hàng\`;"
+`;

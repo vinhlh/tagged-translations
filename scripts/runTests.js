@@ -2,11 +2,10 @@ const babel = require('babel-core')
 const fs = require('fs')
 const path = require('path')
 
-
-const runTests = (dir, presets = ['react', 'es2015']) => {
+const runTests = (dir, presets = ['react', 'es2015'], plugins) => {
   const configs = {
     presets,
-    plugins: [
+    plugins: plugins || [
       [
         require('../src'),
         {

@@ -6,14 +6,14 @@ A dead simple `babel-plugin` for translating texts in React applications.
 Input
 ```js
 <Header>
-  t`Hello ${name}!`
+  {t`Hello ${name}!`}
 </Header>
 ```
 
 Output
 ```js
 <Header>
-  `Xin chào ${name} 🤣!`
+  {`Xin chào ${name} 🤣!`}
 </Header>
 ```
 
