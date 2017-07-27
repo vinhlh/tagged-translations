@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    [
+      "tagged-translations",
+      {
+        "translation": "./translations/default.json"
+      }
+    ]
+  ]
+}
