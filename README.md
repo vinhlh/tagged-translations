@@ -23,7 +23,7 @@ Output
 - Translations are configured in a JSON file.
 
 ## Usage
-Via `.babelrc`
+### Via `.babelrc`
 
 ```js
 {
@@ -38,6 +38,24 @@ Via `.babelrc`
 
 - `translation`: the location of translation json.
 - `tagName`: translation tag name. Default: `t`.
+
+### Via `babel-macros`
+
+```js
+{
+  "plugins": ["babel-macros"]
+}
+```
+
+then import the macro and use it.
+
+```js
+import t from 'tagged-translations/macro';
+
+const name = 'Vinh Le';
+
+t`Hello ${name}`;
+```
 
 
 ## Notes
