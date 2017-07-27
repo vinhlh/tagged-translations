@@ -23,6 +23,11 @@ Output
 - Translations are configured in a JSON file.
 
 ## Usage
+Install 
+`yarn add --dev tagged-translations`
+
+then configure
+
 ### Via `.babelrc`
 
 ```js
