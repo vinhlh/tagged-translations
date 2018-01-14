@@ -1,7 +1,10 @@
 {
+  "scripts": {
+    "dev": "babel app.js"
+  },
   "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
-    "tagged-translations": "^1.1.1"
+    "tagged-translations": "^1.1.3"
   }
 }

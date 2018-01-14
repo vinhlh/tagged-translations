@@ -9,5 +9,15 @@ exports[`test simple.js 1`] = `
 
 \`Tìm thấy \${itemFound} sản phẩm!\`;
 
-\`Vui lòng chuyển khoản \${grandTotal} đến tài khoản này trong vòng \${time} ngày để hoàn tất đơn hàng\`;"
+\`Vui lòng chuyển khoản \${grandTotal} đến tài khoản này trong vòng \${time} ngày để hoàn tất đơn hàng\`;
+
+\`This \${text} has \${wrong} quasis\`;
+
+const awesomeNumber = 1 + '2';
+
+function anotherFunc() {
+  return true;
+}
+
+anotherFunc\`this text wouldn't be translated \${text}\`;"
 `;

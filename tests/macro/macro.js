@@ -1,13 +1,13 @@
-import t from './src/macro';
+import t from '../../src/macro'
 
-const name = 'Vinh Le';
+const name = 'Vinh Le'
 
-t`Hello ${name}`;
+t`Hello ${name}`
 
-t`Place your order`;
+t`Place your order`
 
-t`This text doesn't have any translation`;
+t`This text doesn't have any translation`
 
-t`${itemFound} items found!`;
+t`${itemFound} items found!`
 
-t`Please make the transfer of ${grandTotal} to the following account within ${time} to complete your order`;
+t`Please make the transfer of ${grandTotal} to the following account within ${time} to complete your order`

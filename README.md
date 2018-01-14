@@ -1,5 +1,5 @@
 # tagged-translations
-[![Build Status](https://travis-ci.org/vinhlh/tagged-translations.svg?branch=master)](https://travis-ci.org/vinhlh/tagged-translations)
+[![Build Status](https://img.shields.io/travis/vinhlh/tagged-translations.svg?style=flat-square)](https://travis-ci.org/vinhlh/tagged-translations) [![npm](https://img.shields.io/npm/v/tagged-translations.svg?style=flat-square)](https://www.npmjs.com/package/tagged-translations) [![Coverage Status](https://img.shields.io/coveralls/github/vinhlh/tagged-translations.svg?style=flat-square)](https://coveralls.io/github/vinhlh/tagged-translations?branch=master) [![Babel Macro](https://img.shields.io/badge/babel--macro-%F0%9F%8E%A3-f5da55.svg?style=flat-square)](https://github.com/kentcdodds/babel-plugin-macros)
 
 A dead simple `babel-plugin` for translating texts in React applications.
 
@@ -23,7 +23,7 @@ Output
 - Translations are configured in a JSON file.
 
 ## Usage
-Install 
+Install
 `yarn add --dev tagged-translations`
 
 then configure
@@ -34,14 +34,14 @@ then configure
 {
   "plugins": [
     ["tagged-translations", {
-      "translation": "./translation.json",
+      "translationFile": "./translation.json",
       "tagName": "t"
     }]
   ]
 }
 ```
 
-- `translation`: the location of translation json.
+- `translationFile`: the location of translation json.
 - `tagName`: translation tag name. Default: `t`.
 
 ### Via `babel-macros`
@@ -62,6 +62,9 @@ const name = 'Vinh Le';
 t`Hello ${name}`;
 ```
 
+## Contributing
+- Run all tests
+`yarn test:dev`
 
 ## Notes
 - We don't cover 100% cases: don't support `\n` characters.

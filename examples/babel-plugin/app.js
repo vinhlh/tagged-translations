@@ -1,3 +1,3 @@
-const name = 'Vinh Le';
+const name = 'Vinh Le'
 
-t`Hello ${name}`;
+t`Hello ${name}`

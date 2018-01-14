@@ -1,18 +1,9 @@
-const translate = require('./translate')
+const { translatePath } = require('./translate')
 
 module.exports = ({ types: t }) => ({
   visitor: {
-    TaggedTemplateExpression(
-      path,
-      { opts: { tagName = 't', translation = null } }
-    ) {
-      const { node } = path
-      if (node.tag.name !== tagName) {
-        return
-      }
-
-      translate(node.quasi.quasis, translation)
-      path.replaceWith(node.quasi)
+    TaggedTemplateExpression(path, { opts }) {
+      translatePath(path, opts)
     }
   }
 })

@@ -1,6 +1,6 @@
 {
   "name": "tagged-translations",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A dead simple babel-plugin for translating texts in React applications",
   "author": "Vinh Le <hung.vjnh@gmail.com>",
   "keywords": [
@@ -10,24 +10,38 @@
     "translation",
     "tagged-template",
     "babel-macros",
+    "babel-plugin-macros",
     "react"
   ],
   "main": "src/index.js",
   "dependencies": {},
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:dev": "jest --watch",
+    "coverage": "jest --coverage",
+    "lint": "eslint src/",
+    "format": "prettier --write '**/*.js'"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
-    "babel-macros": "^0.5.2",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-macros": "^2.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "jest": "^20.0.4"
+    "coveralls": "^3.0.0",
+    "eslint": "^4.15.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "format": "prettier --write 'src/**/*.js'",
+    "jest": "^22.0.6",
+    "prettier": "^1.10.2"
   },
   "jest": {
     "testRegex": "tests/.*\\.tests\\.js$",
     "setupFiles": [
       "<rootDir>/scripts/runTests.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
     ]
   }
 }
