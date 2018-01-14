@@ -39,6 +39,9 @@
     "testRegex": "tests/.*\\.tests\\.js$",
     "setupFiles": [
       "<rootDir>/scripts/runTests.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
     ]
   }
 }
