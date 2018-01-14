@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test custom-options.js 1`] = `
+"
+
+const name = 'Vinh Le';
+
+\`Xin chào \${name} 👻 This is from a custom translation file\`;"
+`;
