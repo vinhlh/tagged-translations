@@ -44,11 +44,11 @@ then configure
 - `translationFile`: the location of translation json.
 - `tagName`: translation tag name. Default: `t`.
 
-### Via `babel-macros`
+### Via `babel-plugin-macros`
 
 ```js
 {
-  "plugins": ["babel-macros"]
+  "plugins": ["macros"]
 }
 ```
 
