@@ -1,5 +1,5 @@
-import v from '../../src/macro';
+import v from '../../src/macro'
 
-const name = 'Vinh Le';
+const name = 'Vinh Le'
 
-v`Hello ${name}`;
+v`Hello ${name}`

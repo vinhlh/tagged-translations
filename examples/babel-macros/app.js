@@ -1,5 +1,5 @@
-import t from 'tagged-translations/macro';
+import t from 'tagged-translations/macro'
 
-const name = 'Vinh Le';
+const name = 'Vinh Le'
 
-t`Hello ${name}`;
+t`Hello ${name}`

@@ -2,7 +2,6 @@ const { translatePath } = require('./translate')
 const { createMacro } = require('babel-plugin-macros')
 
 function taggedTranslationsMacro({ references, config }) {
-  console.warn(config)
   references.default.forEach(({ parentPath: path }) => {
     translatePath(path, config)
   })

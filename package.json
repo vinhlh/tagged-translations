@@ -19,7 +19,8 @@
     "test": "jest",
     "test:dev": "jest --watch",
     "coverage": "jest --coverage",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "format": "prettier --write '**/*.js'"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
