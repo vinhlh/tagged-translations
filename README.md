@@ -1,5 +1,5 @@
 # tagged-translations
-[![Build Status](https://img.shields.io/travis/vinhlh/tagged-translations.svg?style=flat-square)](https://travis-ci.org/vinhlh/tagged-translations) [![npm](https://img.shields.io/npm/dw/localeval.svg?style=flat-square)](https://www.npmjs.com/package/tagged-translations) [![Coverage Status](https://img.shields.io/coveralls/github/vinhlh/tagged-translations.svg?style=flat-square)](https://coveralls.io/github/vinhlh/tagged-translations?branch=master) [![Babel Macro](https://img.shields.io/badge/babel--macro-%F0%9F%8E%A3-f5da55.svg?style=flat-square)](https://github.com/kentcdodds/babel-plugin-macros)
+[![Build Status](https://img.shields.io/travis/vinhlh/tagged-translations.svg?style=flat-square)](https://travis-ci.org/vinhlh/tagged-translations) [![npm](https://img.shields.io/npm/v/tagged-translations.svg?style=flat-square)](https://www.npmjs.com/package/tagged-translations) [![Coverage Status](https://img.shields.io/coveralls/github/vinhlh/tagged-translations.svg?style=flat-square)](https://coveralls.io/github/vinhlh/tagged-translations?branch=master) [![Babel Macro](https://img.shields.io/badge/babel--macro-%F0%9F%8E%A3-f5da55.svg?style=flat-square)](https://github.com/kentcdodds/babel-plugin-macros)
 
 A dead simple `babel-plugin` for translating texts in React applications.
 
