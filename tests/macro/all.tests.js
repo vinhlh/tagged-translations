@@ -1,1 +1,1 @@
-runTests(__dirname, [], ['babel-macros'])
+runTests(__dirname, [], ['babel-plugin-macros'])
