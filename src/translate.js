@@ -23,10 +23,6 @@ function translate(quasis, translationFile) {
 }
 
 const getTranslations = file => {
-  if (!file) {
-    return {}
-  }
-
   const translationsFile = path.resolve(process.cwd(), file)
   return JSON.parse(fs.readFileSync(translationsFile, 'utf-8'))
 }
