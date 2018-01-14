@@ -1,4 +1,4 @@
-import t from './src/macro';
+import t from '../../src/macro';
 
 const name = 'Vinh Le';
 

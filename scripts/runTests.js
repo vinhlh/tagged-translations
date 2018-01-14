@@ -16,14 +16,20 @@ const runTests = (dir, presets = ['react', 'es2015'], plugins) => {
     ]
   }
 
+  // set cwd to tests's location
+  process.chdir(dir)
+
   fs
     .readdirSync(dir)
     .filter(
-      fileName => !fileName.endsWith('tests.js') && fileName.endsWith('.js')
+      fileName =>
+        !fileName.endsWith('tests.js') &&
+        !fileName.endsWith('.config.js') &&
+        fileName.endsWith('.js')
     )
     .forEach(fileName => {
       test(`test ${fileName}`, done => {
-        fs.readFile(`${dir}/${fileName}`, (err, data) => {
+        fs.readFile(dir + '/' + fileName, (err, data) => {
           if (err) {
             throw err
           }
