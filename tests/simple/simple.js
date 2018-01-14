@@ -15,3 +15,5 @@ const awesomeNumber = 1 + '2'
 function anotherFunc() {
   return true
 }
+
+anotherFunc`this text wouldn't be translated ${text}`
