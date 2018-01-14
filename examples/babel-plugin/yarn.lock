@@ -1112,9 +1112,9 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
 
-tagged-translations@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/tagged-translations/-/tagged-translations-1.1.1.tgz#8ebdc68ca0f706fc18cb1ce4240d3c5e00d8389f"
+tagged-translations@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/tagged-translations/-/tagged-translations-1.1.3.tgz#53ec733eb5c55e1c0a20c1dab34125027db85ff9"
 
 tar-pack@^3.4.0:
   version "3.4.0"
