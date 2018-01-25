@@ -62,6 +62,21 @@ const name = 'Vinh Le';
 t`Hello ${name}`;
 ```
 
+### Multiple translations
+In order to support multiple translations, we could specify the translation file based on an environment variable in the build time.
+
+```js
+// babel-plugin-macros.config.js
+const { REACT_APP_LANGUAGE: language } = process.env
+
+module.exports = {
+  taggedTranslations: {
+    tagName: 't',
+    translationFile: `./src/translations/buildTime/${language}.json`
+  }
+}
+```
+
 ## Contributing
 - Run all tests
 `yarn test:dev`
