@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/vinhlh/tagged-translations#readme",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "lodash.merge": "^4.6.1"
+  },
   "scripts": {
     "test": "jest",
     "test:dev": "jest --watch",

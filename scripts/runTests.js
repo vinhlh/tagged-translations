@@ -1,8 +1,9 @@
 const babel = require('babel-core')
 const fs = require('fs')
 const path = require('path')
+const merge = require('lodash.merge')
 
-const runTests = (dir, presets = ['react', 'es2015'], plugins) => {
+const runTests = (dir, presets = ['react', 'es2015'], plugins, error = false) => {
   const configs = {
     presets,
     plugins: plugins || [
@@ -35,9 +36,17 @@ const runTests = (dir, presets = ['react', 'es2015'], plugins) => {
           }
 
           const input = data.toString()
-          const output = babel.transform(input, configs)
+          const babelConfigs = merge(configs, { filename: fileName })
 
-          expect(output.code).toMatchSnapshot()
+          if (error) {
+            expect(() => {
+              babel.transform(input, babelConfigs)
+            }).toThrowErrorMatchingSnapshot()
+          } else {
+            const output = babel.transform(input, babelConfigs)
+            expect(output.code).toMatchSnapshot()
+          }
+
           done()
         })
       })
