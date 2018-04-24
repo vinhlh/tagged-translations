@@ -1,1 +1,3 @@
-runTests(__dirname, [], ['babel-plugin-macros'], true)
+runTests(__dirname, [], ['babel-plugin-macros'], transform => {
+  expect(transform).toThrowErrorMatchingSnapshot()
+})

@@ -17,3 +17,7 @@ function anotherFunc() {
 }
 
 anotherFunc`this text wouldn't be translated ${text}`
+
+const anSequenceExpression = (0, 'awesome')
+const anotherSequenceExpression = (0, 777, 'anotherSequenceExpression')
+const anotherSequenceExpressionWithTagged = (0, 777, t`Place your order`)
