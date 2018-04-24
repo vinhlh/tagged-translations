@@ -3,7 +3,12 @@ const fs = require('fs')
 const path = require('path')
 const merge = require('lodash.merge')
 
-const runTests = (dir, presets = ['react', 'es2015'], plugins, error = false) => {
+const runTests = (
+  dir,
+  presets = ['react', 'es2015'],
+  plugins,
+  error = false
+) => {
   const configs = {
     presets,
     plugins: plugins || [
