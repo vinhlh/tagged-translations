@@ -3,11 +3,16 @@ const fs = require('fs')
 const path = require('path')
 const merge = require('lodash.merge')
 
+const matchCodeSnapshot = transform => {
+  const output = transform()
+  expect(output.code).toMatchSnapshot()
+}
+
 const runTests = (
   dir,
   presets = ['react', 'es2015'],
   plugins,
-  error = false
+  validate = matchCodeSnapshot
 ) => {
   const configs = {
     presets,
@@ -43,14 +48,7 @@ const runTests = (
           const input = data.toString()
           const babelConfigs = merge(configs, { filename: fileName })
 
-          if (error) {
-            expect(() => {
-              babel.transform(input, babelConfigs)
-            }).toThrowErrorMatchingSnapshot()
-          } else {
-            const output = babel.transform(input, babelConfigs)
-            expect(output.code).toMatchSnapshot()
-          }
+          validate(() => babel.transform(input, babelConfigs))
 
           done()
         })
