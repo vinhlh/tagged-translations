@@ -3,9 +3,6 @@ const mockIstanbulTracker = babel => {
 
   return {
     visitor: {
-      Program(path) {
-        debugger
-      },
       Identifier(path) {
         if (path.node.name.indexOf('cov_') !== -1) {
           path.node.name = 'cov_tracker'
