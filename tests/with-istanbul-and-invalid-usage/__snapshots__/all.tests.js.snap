@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test with-istanbul-and-invalid-usage.js 1`] = `"with-istanbul-and-invalid-usage.js: ../../src/macro: tagged-translations/macro can only be used in tagged template expression. You tried SequenceExpression."`;
